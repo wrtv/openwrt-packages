@@ -1,14 +1,14 @@
 name: openwrt-packages
 
 on:
-  repository_dispatch:
-  workflow_dispatch:
   push:
     paths:
       - '.github/workflows/openwrt-packages.yml'
       - 'main.sh'
   schedule:
     - cron: 0 */1 * * *
+  repository_dispatch:
+  workflow_dispatch:
   watch:
     types: started
 
