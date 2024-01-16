@@ -6,7 +6,7 @@ on:
   push:
     paths:
       - '.github/workflows/openwrt-packages.yml'
-      - '.github/diy/main.sh'
+      - 'main.sh'
   schedule:
     - cron: 0 */1 * * *
   watch:
