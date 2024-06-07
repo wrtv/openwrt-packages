@@ -13,7 +13,7 @@ stop()
 	for i in $(seq 0 31); do
 		ipset destroy host_acl_rule${i}_mac 2>/dev/null
 		ipset destroy host_acl_rule${i}_ipv4 2>/dev/null
-		ipset destroy host_acl_rule${i}_ipv4 2>/dev/null
+		ipset destroy host_acl_rule${i}_ipv6 2>/dev/null
 	done
 }
 
